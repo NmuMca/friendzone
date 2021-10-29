@@ -7,6 +7,17 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'UserRegistration',component:UserRegistrationComponent},
+
+const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
