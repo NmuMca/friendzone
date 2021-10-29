@@ -1,0 +1,7 @@
+{
+  "name": "friendZone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
