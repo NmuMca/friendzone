@@ -1,0 +1,79 @@
+
+<ion-content class="">
+
+    <div class="bg-warning" style="height: 100%;border:1.5px solid black;border-radius: 30px 30px 15px 15px;margin-top: 5rem;">
+        <div class="row m-4">
+            <div class="col-12">
+                <ion-icon name='close-circle' (click)='dismiss()' style="float: right;padding-right:0px;font-size: 20px;"></ion-icon>
+            </div>
+            <div class="col-12 text-center">
+                <h1>
+                    User Registration
+                </h1>
+            </div>
+        </div>
+
+        <form>
+           <ion-grid>
+               <ion-row>
+                   <ion-col size="6">
+                    <div>
+                        <label for="">
+                        Fname
+                    </label>
+                        <input type="text" name="" placeholder="first name" id="">
+                    </div>
+                   </ion-col>
+                   <ion-col size="6">
+                    <div>
+                        <label for="">Lname</label>
+                        <input type="text" name="" id="" placeholder="last name">
+                    </div>
+                   </ion-col>
+
+
+                   <ion-col size="12">
+                    <div>
+                        <label for="">Mail</label>
+                        <input type="email" name="" id="" placeholder="e-mail">
+                    </div>
+                   </ion-col>
+
+
+                   <ion-col size="12">
+                    <div>
+                        <label for="">Mobile</label>
+                        <input type="number" name="" id="" placeholder="mobile number">
+                    </div>
+                   </ion-col>
+
+
+
+                   <ion-col size="12">
+                    <div>
+                        <label for="">DOB</label>
+                        <input type="date" name="" id="">
+                    </div>
+                   </ion-col>
+
+                   <ion-col size="12">
+                    <div>
+                        <label for="">password</label>
+                        <input type="password" name="" id="" placeholder="password">
+                    </div>
+                   </ion-col>
+
+
+                   <ion-col size="12">
+                    <div class="text-center">
+
+                        <input type="submit" class="btn btn-sm" value="SingUp" style="color: yellow;width: 6rem;background-color: black;text-align: center;">
+                    </div>
+                   </ion-col>
+
+               </ion-row>
+
+           </ion-grid>
+       </form>
+    </div>
+</ion-content>
