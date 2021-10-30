@@ -11,10 +11,11 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { NavbarComponent } from './user/navbar/navbar.component';
 import { TabsComponent } from './user/tabs/tabs.component';
+import { ProfileComponent } from './user/profile/profile.component';
 
 @NgModule({
   declarations: [AppComponent,
-UserRegistrationComponent,HomeComponent,UserComponent,NavbarComponent,TabsComponent],
+UserRegistrationComponent,HomeComponent,UserComponent,NavbarComponent,TabsComponent, ProfileComponent],
  entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
