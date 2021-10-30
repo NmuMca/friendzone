@@ -3,10 +3,13 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'UserRegistration',component:UserRegistrationComponent},
+
+  {path:'user',component:UserComponent},
 
 const routes: Routes = [
   {
@@ -18,6 +21,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
 ];
 
 @NgModule({
