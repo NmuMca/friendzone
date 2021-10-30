@@ -9,31 +9,11 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'UserRegistration',component:UserRegistrationComponent},
-<<<<<<< HEAD
   {path:'user',component:UserComponent,
-  children: [
-    {
-      path: 'dashboard', // child route path
-      component: FeedComponent, // child route component that the router renders
-    },
+  children:[
+    {path:'',component:FeedComponent},
   ]
-  },
-=======
-
-  {path:'user',component:UserComponent},
-
-const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-
->>>>>>> 5c184f26fa01e26d4b51b1d5c092bdd87188dc53
+  }
 ];
 
 @NgModule({

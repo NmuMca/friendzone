@@ -14,14 +14,8 @@ import { TabsComponent } from './user/tabs/tabs.component';
 
 @NgModule({
   declarations: [AppComponent,
-
-  UserRegistrationComponent,HomeComponent,UserComponent,NavbarComponent,TabsComponent],
-  UserRegistrationComponent,HomeComponent],
-
-@NgModule({
-  declarations: [AppComponent],
-
-  entryComponents: [],
+UserRegistrationComponent,HomeComponent,UserComponent,NavbarComponent,TabsComponent],
+ entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
