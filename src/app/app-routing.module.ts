@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'UserRegistration',component:UserRegistrationComponent},
+<<<<<<< HEAD
   {path:'user',component:UserComponent,
   children: [
     {
@@ -17,6 +18,22 @@ const routes: Routes = [
     },
   ]
   },
+=======
+
+  {path:'user',component:UserComponent},
+
+const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+
+>>>>>>> 5c184f26fa01e26d4b51b1d5c092bdd87188dc53
 ];
 
 @NgModule({
