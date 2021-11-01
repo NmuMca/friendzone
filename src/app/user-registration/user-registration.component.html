@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <form>
+        <form  #people="ngForm" (ngSubmit)="onSubmit(people.value)">
            <ion-grid>
                <ion-row>
                    <ion-col size="6">
@@ -21,13 +21,13 @@
                         <label for="">
                         Fname
                     </label>
-                        <input type="text" name="" placeholder="first name" id="">
+                        <input type="text" name="fname" placeholder="first name" id="" ngModel>
                     </div>
                    </ion-col>
                    <ion-col size="6">
                     <div>
                         <label for="">Lname</label>
-                        <input type="text" name="" id="" placeholder="last name">
+                        <input type="text" name="lname" id="" placeholder="last name" ngModel>
                     </div>
                    </ion-col>
 
@@ -35,14 +35,14 @@
                    <ion-col size="12">
                     <div>
                         <label for="">Mail</label>
-                        <input type="email" name="" id="" placeholder="e-mail">
+                        <input type="email" name="gmail" id="" placeholder="e-mail" ngModel>
                     </div>
                    </ion-col>
 
                    <ion-col size="12">
                     <div>
                         <label for="">Mobile</label>
-                        <input type="number" name="" id="" placeholder="mobile number">
+                        <input type="number" name="mobile" id="" placeholder="mobile number" ngModel>
                     </div>
                    </ion-col>
 
@@ -51,17 +51,17 @@
                    <ion-col size="12">
                     <div>
                         <label for="">DOB</label>
-                        <input type="date" name="" id="">
+                        
+                            <input type="date" name="DOB" id="" ngModel>
                     </div>
                    </ion-col>
 
                    <ion-col size="12">
                     <div>
                         <label for="">password</label>
-                        <input type="password" name="" id="" placeholder="password">
+                        <input type="password" name="password" id="" placeholder="password" ngModel>
                     </div>
                    </ion-col>
-
 
                    <ion-col size="12">
                     <div class="text-center">

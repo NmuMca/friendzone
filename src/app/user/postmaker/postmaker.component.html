@@ -1,0 +1,10 @@
+<ion-content>
+    <ion-button (click)="pickImages()">pick Images</ion-button>
+</ion-content>
+<div class="row">
+
+    <div *ngFor="let image of images" class="col-1">
+        <img [src]="image" />
+
+    </div>
+</div>
