@@ -10,5 +10,7 @@ export class TabsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-
+  feed(){
+    alert('hello');
+  }
 }

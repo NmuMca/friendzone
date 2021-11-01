@@ -171,6 +171,7 @@
     }
   },
   "cli": {
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

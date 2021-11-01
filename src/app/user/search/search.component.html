@@ -1,0 +1,10 @@
+
+<div class="container-fluid bg-white shadow-sm fixed-top" style="height: 2.6rem;">
+    <ion-searchbar showCancelButton="focus" [ngModel]='SearchBar' (ngModelChange)="UserData($event)">
+    </ion-searchbar>
+    <ion-card>
+        <ion-item *ngFor="let name of people" class="ion-activated">
+           <a [routerLink]="['/userDetails', name.id]" routerLinkActive="active">{{name.fname}}</a> 
+        </ion-item>
+    </ion-card>
+</div>

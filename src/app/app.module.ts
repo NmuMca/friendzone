@@ -11,13 +11,28 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { NavbarComponent } from './user/navbar/navbar.component';
 import { TabsComponent } from './user/tabs/tabs.component';
+import { ProfileComponent } from './user/profile/profile.component';
+import { PostmakerComponent } from './user/postmaker/postmaker.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import {ImagePicker} from '@ionic-native/image-picker/ngx';
+import { SearchComponent } from './user/search/search.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
 
 @NgModule({
   declarations: [AppComponent,
-UserRegistrationComponent,HomeComponent,UserComponent,NavbarComponent,TabsComponent],
+  UserRegistrationComponent,
+  HomeComponent,
+  UserComponent,
+  NavbarComponent,
+  TabsComponent,
+  ProfileComponent,
+  PostmakerComponent,
+  SearchComponent,
+  UserDetailsComponent],
  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule,FormsModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},ImagePicker],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
